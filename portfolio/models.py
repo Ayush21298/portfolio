@@ -9,5 +9,5 @@ class Pers_Info(models.Model):
 	branch = models.CharField(max_length=32)
 	dob = models.DateField("Date Of Birth")
 	Age = models.IntegerField(default=0)
-	contact_no = models.IntegerField(max_length=10)
+	contact_no = models.IntegerField(default=0)
 	contact_id = models.CharField(max_length=32)
