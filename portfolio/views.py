@@ -1,3 +1,5 @@
 from django.shortcuts import render
+from .models import Pers_Info
 
-# Create your views here.
+def info(request, entry_no):
+	return render(request , 'portfolio/info.html', {'entry_no':entry_no})
