@@ -11,3 +11,5 @@ class Pers_Info(models.Model):
 	Age = models.IntegerField(default=0)
 	contact_no = models.IntegerField(default=0)
 	contact_id = models.CharField(max_length=32)
+	def __str__(self):
+		return self.entry
