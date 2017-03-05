@@ -1,11 +1,31 @@
+{% load static %}
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css"  href = "{%  static 'portfolio/style.css' %}"/>
+<title> Info. page of {{p.name}}</title>
+</head>
+
+<body bgcolor="aqua">
 
 <h1>Entry No : {{ p.entry }}</h1>
 	
-	<p>
+	<!-- <p>
 		<b>NAME : </b>{{ p.name }}<br>
 		<b>BRANCH : </b>{{ p.branch }}<br>
 		<b>DOB : </b>{{ p.dob }}<br>
 		<b>AGE : </b>{{ p.Age }}<br>
 		<b>CONTACT_NO : </b>{{ p.contact_no }}<br>
 		<b>CONTACT_ID : </b>{{ p.contact_id }}<br>
-	</p>
+	</p> -->
+<table border=3 cellpadding=10 >
+		<tr><td><b>NAME  </b></td><td>: {{ p.name }}<br></tr>
+		<tr><td><b>BRANCH  </b></td><td>: {{ p.branch }}<br></tr>
+		<tr><td><b>DOB  </b></td><td>: {{ p.dob }}<br></tr>
+		<tr><td><b>AGE  </b></td><td>: {{ p.Age }}<br></tr>
+		<tr><td><b>CONTACT_NO  </b></td><td>: {{ p.contact_no }}<br></tr>
+		<tr><td><b>CONTACT_ID  </b></td><td>: {{ p.contact_id }}<br><tr>
+
+</body>
+</html>
