@@ -5,7 +5,7 @@ from django.db import models
 
 class Pers_Info(models.Model):
 	name = models.CharField(max_length=32)
-	entry = models.CharField(max_length=11)
+	entry = models.CharField(max_length=11, unique=True)
 	branch = models.CharField(max_length=32)
 	dob = models.DateField("Date Of Birth")
 	Age = models.IntegerField(default=0)
