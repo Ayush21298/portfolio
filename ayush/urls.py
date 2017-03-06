@@ -24,4 +24,4 @@ from django.conf.urls import include,url
 from django.contrib import admin
 from portfolio import views
 
-urlpatterns = [ url(r'^$',views.home,name='home') , url(r'^portfolio/',include('portfolio.urls')), url(r'^admin/',admin.site.urls), url(r'^mail/',views.mail,name='mail'), ]
+urlpatterns = [ url(r'^$',views.home,name='home') , url(r'^portfolio/',include('portfolio.urls')), url(r'^admin/',admin.site.urls), url(r'^mail/',views.mail,name='mail'), url(r'^ack/',views.ack,name='ack'), ]

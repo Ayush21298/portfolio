@@ -14,4 +14,7 @@ def home(request):
 
 def mail(request):
 	return render(request, 'portfolio/mail.html',{})
+
+def ack(request):
+	return render(request, 'portfolio/ack.html',{})
 	

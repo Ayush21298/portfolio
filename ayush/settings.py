@@ -26,7 +26,7 @@ SECRET_KEY = '((k_-vc7)_*aey**%-m38o_lq@4ns+7jg*a4s8a&v#s_i!5#db'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'sheltered-hamlet-38332.herokuapp.com', u'apsoftz.herokuapp.com'  ]
+ALLOWED_HOSTS = [u'sheltered-hamlet-38332.herokuapp.com', u'apsoftz.herokuapp.com', u'127.0.0.1',  ]
 
 
 # Application definition
